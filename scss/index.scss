@@ -313,3 +313,29 @@ nav {
     }
   }
 }
+
+// section Clientes
+
+.clients {
+  display: grid;
+  gap: 8vw;
+  .clients__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5vw;
+    .client {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 5vh;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.6);
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
