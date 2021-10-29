@@ -15,6 +15,17 @@ html {
 body {
   background-color: #101010;
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+  background-color: #101010;
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6a00), to(#ee0979));
+  background-image: linear-gradient(to bottom, #ff6a00, #ee0979);
 }
 
 h1 {
@@ -107,6 +118,11 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ff6a00;
+}
+
+.responsive__navbar {
+  position: fixed;
+  top: 0;
 }
 
 .dark {

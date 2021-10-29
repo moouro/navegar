@@ -15,6 +15,14 @@ html {
 body {
   background-color: #101010;
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden !important;
+  &::-webkit-scrollbar {
+    background-color: #101010;
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #ff6a00, #ee0979);
+  }
 }
 
 h1 {
@@ -85,6 +93,12 @@ nav {
       cursor: pointer;
     }
   }
+}
+
+.responsive__navbar {
+  position: fixed;
+  top: 0;
+  //right: -350px;
 }
 
 // section hero
