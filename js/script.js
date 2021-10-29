@@ -1,14 +1,14 @@
-// const scrollToTop = document.querySelector(".scrollToTop");
+const scrollToTop = document.querySelector('.scroolToTop')
 let isMilestonesLoaded = false
 
-// window.addEventListener("scroll", () => {
-//   window.pageYOffset > 400
-//     ? (scrollToTop.style.display = "block")
-//     : (scrollToTop.style.display = "none");
-// });
-// scrollToTop.addEventListener("click", () => {
-//   window.scroll({ top: 0 });
-// });
+window.addEventListener('scroll', () => {
+  window.pageYOffset > 400
+    ? (scrollToTop.style.display = 'block')
+    : (scrollToTop.style.display = 'none')
+})
+scrollToTop.addEventListener('click', () => {
+  window.scroll({ top: 0 })
+})
 
 const observer = new IntersectionObserver(
   function (entries) {
@@ -41,24 +41,24 @@ const startMilestonesCount = () => {
   }
 }
 
-// const html = document.querySelector('html')
+const html = document.querySelector('html')
 
-// const responsiveNavbar = document.querySelector('.responsive__navbar')
+const responsiveNavbar = document.querySelector('.responsive__navbar')
 
-// responsiveNavbar.addEventListener('click', e => e.stopPropagation())
-// html.addEventListener('click', () => responsiveNavbar.classList.remove('show'))
+responsiveNavbar.addEventListener('click', e => e.stopPropagation())
+html.addEventListener('click', () => responsiveNavbar.classList.remove('show'))
 
-// const responsiveToggle = document.querySelector('.responsive__toggle')
+const responsiveToggle = document.querySelector('.responsive__toggle')
 
-// const navLinks = document.querySelectorAll('#nav__link')
+const navLinks = document.querySelectorAll('#nav__link')
 
-// navLinks.forEach(link =>
-//   link.addEventListener('click', () =>
-//     responsiveNavbar.classList.remove('show')
-//   )
-// )
+navLinks.forEach(link =>
+  link.addEventListener('click', () =>
+    responsiveNavbar.classList.remove('show')
+  )
+)
 
-// responsiveToggle.addEventListener('click', e => {
-//   e.stopPropagation()
-//   responsiveNavbar.classList.toggle('show')
-// })
+responsiveToggle.addEventListener('click', e => {
+  e.stopPropagation()
+  responsiveNavbar.classList.toggle('show')
+})
