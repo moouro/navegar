@@ -98,7 +98,52 @@ nav {
 .responsive__navbar {
   position: fixed;
   top: 0;
-  //right: -350px;
+  right: -350px;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  .responsive__nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.3vw;
+      color: #fff;
+    }
+    img {
+      background-color: #000;
+      height: 10vh;
+      padding: 2vh 5vh;
+      border-radius: 5vh;
+    }
+  }
+  .responsive__nav__links {
+    color: #fff;
+    ul {
+      list-style-type: none;
+      margin: 2vw;
+      li {
+        margin: 2vh;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: #ff6a00;
+          }
+        }
+        font-size: 2.5vh;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 // section hero
@@ -464,5 +509,174 @@ footer {
   cursor: pointer;
   img {
     height: 6vh;
+  }
+}
+
+// responsive
+
+@media screen and (min-width: 280px) and (max-width: 1024px) {
+  h1 {
+    font-size: 5vh;
+  }
+  h2 {
+    font-size: 4vh;
+  }
+  h3 {
+    font-size: 3vh;
+  }
+  h4 {
+    font-size: 2.5vh;
+  }
+  h5 {
+    font-size: 2vh;
+  }
+  h6 {
+    font-size: 1.5vh;
+  }
+  p {
+    font-size: 2vh;
+  }
+  nav {
+    padding: 0 4vw;
+    .responsive__toggle {
+      display: block;
+      img {
+        height: 9vw;
+      }
+    }
+    .nav__links {
+      display: none;
+    }
+  }
+  .section {
+    padding: 10vh 10vw;
+  }
+  .hero {
+    gap: 5vh;
+    .hero__service__container {
+      grid-template-columns: 1fr;
+      .hero__service {
+        .hero__service__logo {
+          img {
+            width: 12vw;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+
+    .about__images {
+      position: relative;
+      img {
+        position: relative;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 60vw;
+        height: 50vh;
+        &:nth-of-type(2) {
+          display: none;
+        }
+      }
+    }
+    .about__content__container {
+      gap: 1vh;
+      .about__link {
+        padding-bottom: 1vh;
+        span {
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+  .services {
+    gap: 6vh;
+    .services__container {
+      grid-template-columns: 1fr;
+      gap: 5vh;
+      .service {
+        padding: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .service__logo {
+          img {
+            height: 6vh;
+          }
+        }
+      }
+    }
+  }
+  .milestones {
+    gap: 6vh;
+    .milestones__container {
+      .milestone {
+        gap: 1vh;
+        padding: 3vh;
+        .milestone__icon {
+          img {
+            height: 5vh;
+          }
+        }
+      }
+    }
+  }
+  .clients {
+    .clients__container {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+  footer {
+    .footer__read {
+      flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 5vh;
+      h2 {
+        font-size: 2.5vh;
+        text-align: center;
+        width: 80%;
+      }
+      button {
+        padding: 2vh;
+        font-size: 2vh;
+      }
+    }
+    .footer__content {
+      grid-template-columns: 1fr;
+      gap: 1vh;
+      margin-top: 2vh;
+      .footer__brand {
+        margin-bottom: 2vh;
+        .footer__logo {
+          gap: 5vw;
+          img {
+            height: 15vh;
+            border-radius: 15vh;
+          }
+        }
+        .footer__copyright {
+          text-align: center;
+        }
+      }
+      .footer__links {
+        h3 {
+          margin-bottom: 2vh;
+        }
+        ul {
+          li {
+            font-size: 2vh;
+            padding-bottom: 0.4vh;
+          }
+        }
+      }
+      .footer__social__links {
+        justify-content: space-between;
+        gap: 0;
+      }
+    }
   }
 }
