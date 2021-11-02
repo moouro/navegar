@@ -120,13 +120,19 @@ nav ul li a:hover {
   color: #ff6a00;
 }
 
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  right: 0 !important;
+}
+
 .responsive__navbar {
   position: fixed;
   top: 0;
   right: -350px;
-  right: 0;
   height: 100%;
   width: 60%;
+  background-color: black;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,18 +163,18 @@ nav ul li a:hover {
 .responsive__navbar .responsive__nav__brand h3 {
   text-transform: uppercase;
   letter-spacing: 0.3vw;
-  color: #fff;
+  color: white;
 }
 
 .responsive__navbar .responsive__nav__brand img {
-  background-color: #000;
+  background-color: black;
   height: 10vh;
-  padding: 2vh 5vh;
+  padding: 2vh 1vw;
   border-radius: 5vh;
 }
 
 .responsive__navbar .responsive__nav__links {
-  color: #fff;
+  color: white;
 }
 
 .responsive__navbar .responsive__nav__links ul {
@@ -183,7 +189,7 @@ nav ul li a:hover {
 }
 
 .responsive__navbar .responsive__nav__links ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
