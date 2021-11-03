@@ -619,9 +619,6 @@ footer .footer__links .footer__social__links img svg {
   bottom: 5vh;
   right: 3vw;
   z-index: 1;
-  background-color: #000;
-  padding: 1rem;
-  border-radius: 3rem 3rem;
   cursor: pointer;
 }
 
